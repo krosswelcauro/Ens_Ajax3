@@ -1,0 +1,263 @@
+/* Título del formulario */
+.step__title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* header de step */
+.step__header {
+    padding: 20px 15px;
+    background-color: var(--color-header-step);
+    text-align: center;
+}
+
+.step__title {
+    font-size: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* body de step */
+.step__body {
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+/* step inputs */
+.step__input {
+    width: 90%;
+    margin-left: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 3px solid #355a9d;
+    outline: none;
+}
+
+.step__input:focus {
+    border: none;
+    border-bottom: 3px solid black;
+    transition: 1s;
+}
+
+
+/* step footer */
+.step__footer {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+/* step botones */
+.step__button {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--color-btn);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.copyright {
+    background-color: #355a9d;
+    color: white;
+    font-size: 18px;
+}
+
+/* Contenedor principal */
+.root {
+    justify-content: center;
+    align-items: center;
+    min-height: 96.2vh;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
+}
+
+/*colores declarados*/
+:root {
+    --color-bg-1: white;
+    --color-bg-2: #bcdcff;
+    --color-btn: #2196F3;
+    --color-header-step: #355a9d;
+    --color-shadow: #222;
+    --color-border-input: #ddd;
+}
+
+
+.modal-header .close{
+    color: white;
+    font-size: 40px;
+}
+
+.modal-header{
+    background-color: #355a9d;
+}
+
+.modal-body{
+    width: 100%;
+}
+
+.modal-title{
+    color: white;
+    font-size: 25px;
+}
+
+.dt-buttons{
+    margin-bottom: 10px;
+}
+
+.row{
+    /*margin-right:  15%;*/
+}
+
+.content h2 {
+    margin-left:15%;
+    color: white;
+}
+
+.content-wrapper{
+    box-shadow: 5px 5px 5px 2px var(--color-shadow);
+    border-radius: 3px;
+}
+
+#add_button {
+    margin-left: 13px;
+}
+
+.inputFileModificado input {
+    border: none;
+}
+
+.inputFileModificado {
+    position: relative;
+    margin-bottom: 15px;
+    width: 0px;
+    height: 0px;
+}
+
+.inputFileOculto {
+    position: relative;
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+    display: none;       
+}
+
+.inputParaMostrar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-right: 80%;
+}
+
+.subir{
+    padding: 5px 10px;
+    background: #355a9d;
+    color:#fff;
+    border-radius: 5px;
+    border:0px solid #fff;
+}
+ 
+.subir:hover{
+    padding: 7px 12px;
+    color: #ffff;
+    background: #2d15f7;
+}
+
+
+/*Modulo COnsulta*/
+/* step */
+.step {
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px var(--color-shadow);
+    border-radius: 3px;
+    min-width: 100%;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.to-left {
+    margin-left: -100%;
+}
+
+.step.inactive {
+    animation-name: scale;
+    animation-duration: .1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* header de step */
+.step__header {
+    padding: 20px 15px;
+    background-color: var(--color-header-step);
+}
+
+.step__title {
+    font-size: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* body de step */
+.step__body {
+    padding: 20px 15px 0;
+}
+
+
+
+/* step footer */
+.step__footer {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+/* step botones */
+.step__button {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--color-btn);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.copyright {
+    background-color: #355a9d;
+    color: white;
+    font-size: 18px;
+}
+
+#cedula_pac, #cedula_acom {
+    margin-left: 50%;
+}
+
+/* body del formulario */
+.form-register__body {
+    display: flex;
+    align-items: flex-start;    
+}
+
